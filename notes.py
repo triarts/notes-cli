@@ -23,6 +23,9 @@ def main(args):
 		"mvn": ["mvn clean install -Dmaven.test.skip=true",
 					"mvn -T 1C install -Dmaven.test.skip=true"
 					],
+		"java": ["sudo update-alternatives --config java",
+					"sudo update-alternatives --config javac"
+					],
 		"liquibase": [	"mvn liquibase:update",
 						"mvn liquibase:update -Dliquibase.toTag=1.2",
 						"mvn liquibase:rollback -Dliquibase.rollbackTag=1.1",
