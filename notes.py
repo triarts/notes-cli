@@ -19,6 +19,7 @@ def main(args):
 				],
 		"bash": ["tail -n 100 -f web.log",
 				"scp docker-compose-postgres.yml ata@192.168.100.7:/home/ata/Project/postgresDocker",
+			 	"scp -r dataGenai/ arta@10.10.175.99:/home/dataGenai"
 				],
 		"mvn": ["mvn clean install -Dmaven.test.skip=true",
 					"mvn -T 1C install -Dmaven.test.skip=true"
